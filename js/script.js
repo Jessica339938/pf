@@ -10,17 +10,3 @@ $(function(){
     });
 
 })
-$(function(){
-    // Remove the # from the hash, as different browsers may or may not include it
-    var hash = location.hash.replace('#','');
-
-    if(hash != ''){
-    
-
-        // Clear the hash in the URL
-        location.hash = '';
-    }
-});
-$(document).bind("hashchange", function(){
-    // Anchor has changed.
-});
