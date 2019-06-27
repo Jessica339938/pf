@@ -17,3 +17,10 @@ $('.js-hook--page-down').click(function (e) {
         scrollTop: $("about").offset().top - 200
     }, 1500);
 });
+$('.skills').click(function (e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $("skills").offset().top - 200
+    }, 1500);
+});
