@@ -10,6 +10,8 @@
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
         <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -24,7 +26,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li><a href="javascript:;" onclick="location.href('#about');">about</a>about</a></li>
+                            <li><a href="#about">about</a></li>
                             <li><a href="#skills">skills</a></li>
                             <li><a href="#experience">Expérience</a></li>
                             <li><a href="#education">Education</a></li>
@@ -35,7 +37,15 @@
                     
                 </div>
                 
-        </nav>    
+        </nav>
+
+
+<script type="text/javascript">$(document) .ready(function() {
+  $('[href="#id"]').click(function() {
+  $("html,body") .animate({scrollTop: $("#id").offset().top},1200, "easeOutBounce");
+  return false;
+  });
+});</script>      
         <section id="about" class="container-fluid">
             <div class="col-xs-8 col-md-4 profile-picture">
                 <img src="images/0.jpg" alt="Yeonsoo" class="img-circle">
